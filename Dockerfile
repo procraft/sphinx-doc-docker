@@ -2,7 +2,7 @@ FROM python:3.6.6-alpine3.7
 
 LABEL maintainer="Procraft Team"
 
-ENV SPHINX_VERSION=1.7.5 \
+ENV SPHINX_VERSION=1.8.1 \
     PIP_NO_COMPILE=1 \
     PIP_CACHE_DIR=/pip-cache
 
