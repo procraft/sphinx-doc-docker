@@ -18,7 +18,7 @@ Minimalistic Alpine-based [Sphinx](http://www.sphinx-doc.org) builder image with
 FROM procraft/sphinx-doc:1.7.5
 
 RUN pip install sphinx_rtd_theme && \
-    rm -rf $PIP_CACHE_DIR/* && pyclean
+    rm -rf $PIP_CACHE_DIR/*
 ```
 
 ## Usage
@@ -29,3 +29,7 @@ docker run --rm -it \
   procraft/sphinx-doc \
   sphinx-multibuild -i doc-source-1 -i doc-source-2 -o built-docs -c .
 ```
+
+## Links
+
+Got some good ideas from this well-made image: https://hub.docker.com/r/webuni/sphinx-doc/~/dockerfile/

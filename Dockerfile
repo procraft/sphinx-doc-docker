@@ -12,7 +12,7 @@ RUN mkdir "$PIP_CACHE_DIR" && chmod a+rwx "$PIP_CACHE_DIR" && \
       m2r \
       recommonmark \
       sphinx-multibuild && \
-    rm -rf $PIP_CACHE_DIR/* && pyclean
+    rm -rf $PIP_CACHE_DIR/*
 
 WORKDIR /docs/
 
